@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Dokdo" rel="stylesheet">
+    <title> To Do List </title>
+    <link rel="stylesheet" href="ToDOLab.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  </head>
+  <body onLoad="setDate(); setQuote();">
+    <header>
+      <div id="topImage">
+        <img src="TODO.jpg" alt="To do image." id="image">
+      </div>
+      <br>
+      <div id="top">
+        <h1> Things To Do: 😰</h1>
+        <iframe id="clock" src="http://free.timeanddate.com/clock/i6i6g8yh/n43/szw210/szh210/hoc000/hbw7/hfc808080/cf100/hgr0/hwc000/fav0/fiv0/mqcfff/mql15/mqw4/mqd94/mhcfff/mhl15/mhw4/mhd94/mmv0/hsc000"  width="210" height="210"></iframe>
+        <a id="weather" target=_blank href="https://www.booked.net/weather/andover-5746"><img src="https://w.bookcdn.com/weather/picture/4_5746_0_1_000000_300_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=w209&anc_id=78227"  alt="booked.net"/></a>
+      </div>
+      <h3 id="quote"> quote</h3>
+    </header>
+    <main>
+      <p id="date" class="fun">Today</p>
+      <p id="bar"> ◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊◊ <p>
+      <p id="today" > Add item for today:<i id="addItem" onclick="selectList(this); addItemPrompt();" class="fas fa-plus-circle"></i></p>
+      <br>
+      <table id="toDoList" class="lists">
+        <tr>
+          <td>
+          </td>
+        </tr>
+      </table>
+      <p id="emojiDay"> 😀</p>
+      <br>
+      <p id="week">Add item for this week:<i id="newItem" onclick="selectList(this); addWeekItemPrompt();" class="fas fa-plus-circle"></i></p>
+      <table class="lists" id="weekList">
+        <tr>
+          <td>
+          </td>
+        </tr>
+      </table>
+      <p id="emojiWeek">😀</p>
+      <br>
+      <div id="dont">
+        <h2 id="forget"> Definitely do not forget to...</h2>
+        <br>
+        <p id="sleep" class="glow"> Get some sleep.</p>
+        <p id="food" class="glow"> Eat food.</p>
+        <p id="friends" class="glow"> Spend time with friends.</p>
+        <p id="exercise" class="glow"> Exercise. <span>...I know, but it is healthy.</span></p>
+      </div>
+      <br>
+    </main>
+    <footer>
+      <p id="foot"> Created by Chriss Morse. 2018.</p>
+    </footer>
+    <script src="TODO.js"></script>
+  </body>
+    <!--Consulted the following links while completing this project.-->
+    <!--https://www.booked.net/?page=weather_widget_customize&type=4&cityID=5746&cmetric=1# (it helped me with the weather widget on my page)-->
+    <!--https://www.timeanddate.com/clocks/free.html(helped me create the clock at the top of my page)-->
+    <!--https://emojipedia.org/face-with-open-mouth-and-cold-sweat/(helped my get the emoji symbols into my page correctly)-->
+    <!--http://todotoday.com/en/(found the image at the top of my page here)-->
+    <!--W3schools.com(helped with just about everything else. It helped me with all of my functions and styling)-->
+    <!-- worked with Ray(certain parts of or projects were similar so we tried to solve similar issues together) and Willow(we worked together to post our websites on the internet)-->
+</html>
